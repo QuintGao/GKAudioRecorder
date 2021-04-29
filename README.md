@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## pod 更新
 `pod lib lint --use-libraries --skip-import-validation`
 `pod spec lint --use-libraries --skip-import-validation`
-`pod repo push GKSpecs GKAudioRecorder.podspec --sources='https://github.com/CodingGK/GKSpecs'`
+`pod repo push GKSpecs GKAudioRecorder.podspec --sources='https://github.com/CodingGK/GKSpecs' --use-libraries --skip-import-validation`
 
 ## Installation
 
