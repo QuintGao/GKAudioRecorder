@@ -282,7 +282,7 @@ typedef NS_ENUM(NSUInteger, AYREC_STATUS) {
 //
 - (void)saveRecordAudioWithFileName:(NSString *)name
                           completed:(void (^)(void))success
-                            failure:(void (^)(void))failure;
+                            failure:(void (^)(NSError *))failure;
 //--------------------------------------------------------------------------------
 
 //--------------------------------------------------------------------------------
@@ -293,8 +293,8 @@ typedef NS_ENUM(NSUInteger, AYREC_STATUS) {
 // Author       - QuintGao
 //
 - (void)saveRecordAudioWithFilePath:(NSString *)filePath
-                          completed:(void (^)(NSDictionary *dic))success
-                            failure:(void (^)(void))failure;
+                          completed:(void (^)(NSDictionary *))success
+                            failure:(void (^)(NSError *))failure;
 //--------------------------------------------------------------------------------
 
 
@@ -308,7 +308,7 @@ typedef NS_ENUM(NSUInteger, AYREC_STATUS) {
 //
 - (void)cutWithLocBeginValue:(float)bValue
                    completed:(void (^)(void))success
-                     failure:(void (^)(void))failure;
+                     failure:(void (^)(NSError *))failure;
 //--------------------------------------------------------------------------------
 
 
@@ -532,7 +532,7 @@ typedef NS_ENUM(NSUInteger, AYREC_STATUS) {
 // Author       - QuintGao
 //
 - (void)revertRelativitySoundWithStateCompleted:(void (^)(NSString *))success
-                                        failure:(void (^)(void))failure;
+                                        failure:(void (^)(NSError *))failure;
 //--------------------------------------------------------------------------------
 
 @end

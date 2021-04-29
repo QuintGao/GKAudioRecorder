@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-#import "AYAudioRecorder.h"
+#import <GKAudioRecorder/AYAudioRecorder.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
