@@ -1,0 +1,16 @@
+PODS:
+  - GKAudioRecorder (1.0.0)
+
+DEPENDENCIES:
+  - GKAudioRecorder (from `../`)
+
+EXTERNAL SOURCES:
+  GKAudioRecorder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GKAudioRecorder: 90d48b1841ae5bd69d35785ad91473d222bd06d1
+
+PODFILE CHECKSUM: 470b228ac20ddabf1dd65d481098a74e2cd6f13a
+
+COCOAPODS: 1.10.1

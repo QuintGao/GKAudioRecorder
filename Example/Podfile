@@ -1,0 +1,6 @@
+use_frameworks!
+target 'GKAudioRecorder_Tests' do
+  pod 'GKAudioRecorder', :path => '../'
+  
+  
+end

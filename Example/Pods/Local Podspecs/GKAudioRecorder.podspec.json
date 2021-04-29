@@ -1,0 +1,38 @@
+{
+  "name": "GKAudioRecorder",
+  "version": "1.0.0",
+  "summary": "基于TAAE封装的录音、播放库",
+  "description": "TheAmazingAudioEngine封装",
+  "homepage": "https://github.com/QuintGao/GKAudioRecorder",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "1094887059@qq.com": "1094887059@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/QuintGao/GKAudioRecorder.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": [
+    "GKAudioRecorder/GKAudioRecorder.framework/Headers/*.{h}",
+    "*.{h,m}"
+  ],
+  "vendored_frameworks": [
+    "GKAudioRecorder/GKAudioRecorder.framework"
+  ],
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "Accelerate",
+    "AudioToolbox",
+    "AVFoundation",
+    "CoreGraphics",
+    "QuartzCore"
+  ],
+  "requires_arc": true
+}
