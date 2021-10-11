@@ -61,7 +61,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param success 开始成功
  @param failure 开始失败
  */
-- (void)startRecordWithSuccess:(void (^)(void))success failure:(void (^)(NSError *error))failure;
+- (void)startRecordWithSuccess:(nullable void (^)(void))success failure:(nullable void (^)(NSError *error))failure;
 
 /**
  暂停录制
@@ -83,10 +83,10 @@ NS_ASSUME_NONNULL_BEGIN
  @param failure 失败回调
  */
 - (void)finishRecordWithPath:(NSString *)path
-                     bgmPath:(NSString *)bgmPath
-                    progress:(void (^)(float progress))progress
-                     success:(void (^)(void))success
-                     failure:(void (^)(NSError *error))failure;
+                     bgmPath:(NSString * _Nullable)bgmPath
+                    progress:(nullable void (^)(float progress))progress
+                     success:(nullable void (^)(void))success
+                     failure:(nullable void (^)(NSError *error))failure;
 
 /**
  开启背景音乐录制(手机内声音，需播放)
@@ -105,7 +105,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param finished 播放完成回调
  */
-- (void)startRecordAuditionWithFinished:(void (^)(void))finished;
+- (void)startRecordAuditionWithFinished:(nullable void (^)(void))finished;
 
 /**
  停止录音试听
@@ -133,7 +133,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param path 背景音乐地址
  */
-- (void)startPlayBGMWithPath:(NSString *)path volume:(float)volume finished:(void (^)(void))finished;
+- (void)startPlayBGMWithPath:(NSString *)path volume:(float)volume finished:(nullable void (^)(void))finished;
 
 /**
  暂停背景音乐播放
@@ -153,7 +153,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param time 播放时间（默认0）
  @param finished 播放完成回调
  */
-- (void)startPlayAudioWithPath:(NSString *)path time:(float)time finished:(void (^)(void))finished;
+- (void)startPlayAudioWithPath:(NSString *)path time:(float)time finished:(nullable void (^)(void))finished;
 
 /**
  音频播放，跳转到指定时间
@@ -183,8 +183,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)insertEffectWithAudioPath:(NSString *)audioPath
                            effect:(GKAudioEffect *)effect
-                          success:(void (^)(AVCompositionTrack *track))success
-                          failure:(void (^)(NSError *error))failure;
+                          success:(nullable void (^)(AVCompositionTrack *track))success
+                          failure:(nullable void (^)(NSError *error))failure;
 
 
 /**
@@ -197,8 +197,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)deleteEffectWithAudioPath:(NSString *)audioPath
                            effect:(GKAudioEffect *)effect
-                          success:(void (^)(void))success
-                          failure:(void (^)(NSError *error))failure;
+                          success:(nullable void (^)(void))success
+                          failure:(nullable void (^)(NSError *error))failure;
 
 
 /**
@@ -212,9 +212,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)compositionAudioWithAudioPathArr:(NSArray *)audioPathArr
                          exportAudioPath:(NSString *)exportAudioPath
-                                progress:(void (^)(float progress))progress
-                                 success:(void (^)(void))success
-                                 failure:(void (^)(NSError *error))failure;
+                                progress:(nullable void (^)(float progress))progress
+                                 success:(nullable void (^)(void))success
+                                 failure:(nullable void (^)(NSError *error))failure;
 
 /**
  音频拼接（音频+音频）
@@ -227,9 +227,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)splicingAudioWithAudioPathArr:(NSArray *)audioPathArr
                       exportAudioPath:(NSString *)exportAudioPath
-                             progress:(void (^)(float progress))progress
-                              success:(void (^)(void))success
-                              failure:(void (^)(NSError *error))failure;
+                             progress:(nullable void (^)(float progress))progress
+                              success:(nullable void (^)(void))success
+                              failure:(nullable void (^)(NSError *error))failure;
 
 /**
  视频合成（音频+视频）
@@ -244,9 +244,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)compositionVideoWithVideoPath:(NSString *)videoPath
                             audioPath:(NSString *)audioPath
                       exportVideoPath:(NSString *)exportVideoPath
-                             progress:(void (^)(float progress))progress
-                              success:(void (^)(void))success
-                              failure:(void (^)(NSError *error))failure;
+                             progress:(nullable void (^)(float progress))progress
+                              success:(nullable void (^)(void))success
+                              failure:(nullable void (^)(NSError *error))failure;
 
 @end
 
