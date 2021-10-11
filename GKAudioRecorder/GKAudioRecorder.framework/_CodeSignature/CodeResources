@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/GKAudioRecorder.h</key>
 		<data>
-		ZM0Cyn+2oBm+4q180EC3C4FuEm0=
+		QBXprbkgfDhevNoLmuV2eu83jvk=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -218,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZM0Cyn+2oBm+4q180EC3C4FuEm0=
+			QBXprbkgfDhevNoLmuV2eu83jvk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ozKgaRnV7Ya6qAPJiUB2iggMmjzRwIVNFCMEtDMiTfs=
+			HExnrLGkmN6Zri/O7CmELf8nQDONHNcFEnj6kJYQ9bA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

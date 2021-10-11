@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-#import <GKAudioRecorder/AYAudioRecorder.h>
+#import "AYAudioRecorder.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -98,6 +98,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)closeBGMRecord;
 
+/// 获取input音轨比例
+- (float)inputTrackPro;
+
+/// 获取output音轨比例
+- (float)outputTrackPro;
+
 #pragma mark - 播放（仅支持本地音频播放）
 #pragma mark - 录音试听
 /**
@@ -166,6 +172,12 @@ NS_ASSUME_NONNULL_BEGIN
  暂停音频播放
  */
 - (void)pausePlayAudio;
+
+
+/**
+ 继续音频播放
+ */
+- (void)resumePlayAudio;
 
 /**
  停止音频播放
