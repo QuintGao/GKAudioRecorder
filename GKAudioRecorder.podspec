@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'GKAudioRecorder'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = '基于TAAE封装的录音、播放库'
   s.description      = <<-DESC
 TheAmazingAudioEngine封装

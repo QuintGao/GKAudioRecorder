@@ -35,6 +35,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)unregisterRecorder;
 
 /**
+ 销毁录音器
+ */
+- (void)destoryRecorder;
+
+/**
  开启手机内录音（可录制手机内播放的声音，如背景音乐）
  */
 - (void)openOutputRecord;
